@@ -1,0 +1,82 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    background-color: #752e2b;
+}
+body{
+    background-color: #f5edbc;
+    color: whitesmoke;  
+    font-family: 'Courier New', Courier, monospace;
+}
+main{
+    margin: 50px;
+}
+h1{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    font-size: 50px;
+    color: black;
+}
+p{
+    font-size: 25px;
+    font-family: Microsoft Yi Baiti;
+    color: black;
+    text-align: left;
+}
+section{
+    display: grid;
+    justify-items: start;
+    align-items: center;
+    min-height: 100vh;
+}
+.section{
+    display: grid;
+    justify-items: start;
+    align-items: center;
+
+}
+.hidden{
+    opacity: 0;
+    filter: blur(15px);
+    transform: translateX(-100%);
+    transition: all 1s;
+
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 1s;
+    text-align: left;
+}
+.avatar{
+    height: 200px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    margin: 5px;
+}
+.logos{
+    display: flex;
+    gap: 20px;
+}
+.logos :nth-child(2){
+    transition-delay: 400ms;
+}
+.logos :nth-child(3){
+    transition-delay: 600ms;
+}
+.logos :nth-child(4){
+    transition-delay: 800ms;
+}
+
+footer{
+    margin: 0;  
+    height: 100px;
+    background-color: #752e2b;
+    color: black;
+    text-align: center;
+}
