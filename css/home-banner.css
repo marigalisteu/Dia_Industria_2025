@@ -1,6 +1,7 @@
 .home-banner {
     position: relative;
     width: 100%;
+    margin-top: 100px; /* espaço para o header fixo */
 }
 
 .home-banner img {
@@ -39,6 +40,7 @@
 .banner-content button {
     padding: 10px 20px;
     font-size: 1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-color: #171F25;
     color: #fff;
     border: none;

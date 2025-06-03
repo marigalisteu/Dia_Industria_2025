@@ -3,10 +3,25 @@ body {
     padding: 0;
 }
 
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    transition: top 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header.hide {
+    top: -150px; /* altura suficiente para esconder o header */
+}
+
 .header-container {
     display: flex;
     justify-content: space-between;
-    background-color: #f5edbc;
+    background-color: #a0a0a0;
 }
 
 .header-container > div{
@@ -92,7 +107,6 @@ body {
     .navegation > nav > ul {
         display: none;
         flex-direction: column;
-        background: #f5edbc;
         position: absolute; /* mudamos de relative para absolute */
         top: 100%; /* começa após o header-container */
         right: 0;
@@ -120,6 +134,7 @@ body {
 .home-banner {
     position: relative;
     width: 100%;
+    margin-top: 100px; /* espaço para o header fixo */
 }
 
 .home-banner img {
@@ -147,7 +162,7 @@ body {
 
 .banner-content span {
     color: white;
-    font-family: 'Microsoft Yi Baiti', sans-serif;
+    font-family: "Microsoft Yi Baiti", sans-serif;
     font-size: 2rem;
     font-weight: bold;
     text-shadow: 1px 1px 4px black;
@@ -158,6 +173,7 @@ body {
 .banner-content button {
     padding: 10px 20px;
     font-size: 1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     background-color: #171F25;
     color: #fff;
     border: none;
@@ -180,4 +196,230 @@ body {
         font-size: 0.9rem;
         padding: 8px 16px;
     }
+}
+
+.proposta {
+    padding: 10px 30px;
+    box-sizing: border-box;
+}
+
+.proposta-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .proposta {
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .proposta-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.proposta-content {
+    text-align: justify;
+    padding: 0px 20px;
+    box-sizing: border-box;
+}
+
+.proposta-content > h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+}
+
+.proposta-content > p {
+    text-indent: 2em;
+    font-family: "Microsoft Yi Baiti", sans-serif;
+    font-size: 28px;
+}
+
+.proposta-image > img {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+}
+
+.problema {
+    padding: 10px 30px;
+    box-sizing: border-box;
+}
+
+.problema-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.problema-content > h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+}
+
+.problema-content > p {
+    text-indent: 2em;
+    font-family: "Microsoft Yi Baiti", sans-serif;
+    font-size: 28px;
+}
+
+.item {
+    font-family: "Microsoft Yi Baiti", sans-serif;
+    font-size: 28px;
+}
+
+@media (max-width: 768px) {
+    .problema {
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .problema-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.problema-content {
+    text-align: justify;
+    padding: 0px 20px;
+    box-sizing: border-box;
+}
+
+.problema-image > img {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+}
+
+.solucao {
+    padding: 10px 30px;
+    box-sizing: border-box;
+}
+
+.solucao-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.solucao-content > h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+}
+
+.solucao-content > p {
+    text-indent: 2em;
+    font-family: "Microsoft Yi Baiti", sans-serif;
+    font-size: 28px;
+}
+
+.solucao-content > a {
+    text-align: center;
+}
+
+.solucao-content > a > button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: #171F25;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+    box-sizing: border-box;
+}
+
+.solucao-content > a > button:hover {
+    background-color: #333;
+}
+
+@media (max-width: 768px) {
+    .solucao {
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .solucao-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.solucao-content {
+    text-align: justify;
+    padding: 0px 20px;
+    box-sizing: border-box;
+}
+
+.solucao-image > img {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+}
+
+.sobre {
+    padding: 10px 30px;
+    box-sizing: border-box;
+}
+
+.sobre-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sobre-content > h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 300;
+    font-size: 40px;
+}
+
+.sobre-content > p {
+    text-indent: 2em;
+    font-family: "Microsoft Yi Baiti", sans-serif;
+    font-size: 28px;
+}
+
+@media (max-width: 768px) {
+    .sobre {
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .sobre-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.sobre-content {
+    text-align: justify;
+    padding: 0px 20px;
+    box-sizing: border-box;
+}
+
+.sobre-image > img {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    box-sizing: border-box;
+    background-color: #171F25;
+    color: white;
+    font-family: "Microsoft Yi Baiti", sans-serif;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
