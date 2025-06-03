@@ -21,7 +21,7 @@ header.hide {
 .header-container {
     display: flex;
     justify-content: space-between;
-    background-color: #a0a0a0;
+    background-color: #e2e2e2;
 }
 
 .header-container > div{
@@ -51,7 +51,7 @@ header.hide {
 .name {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 23px;
-    color: #171F25;
+    color: #412625;
 }
 
 .navegation{
@@ -61,7 +61,7 @@ header.hide {
 
 .navegation > nav > ul {
     list-style: none;
-    background: #a0a0a0;
+    background: #e2e2e2;
     display: flex;
     justify-content: space-around;
     padding: 10px;
@@ -73,7 +73,7 @@ header.hide {
     justify-content: space-around;
     padding: 10px;
     text-decoration: none;
-    color: #171F25;
+    color: #412625;
 }
 
 .nav-link:hover {
@@ -164,8 +164,7 @@ header.hide {
 .banner-content span {
     color: white;
     font-family: "Microsoft Yi Baiti", sans-serif;
-    font-size: 2rem;
-    font-weight: bold;
+    font-size: 4rem;
     text-shadow: 1px 1px 4px black;
     margin-bottom: 15px;
     box-sizing: border-box;
@@ -173,9 +172,9 @@ header.hide {
 
 .banner-content button {
     padding: 10px 20px;
-    font-size: 1rem;
+    font-size: 2rem;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-color: #171F25;
+    background-color: #622723;
     color: #fff;
     border: none;
     border-radius: 8px;
@@ -185,7 +184,7 @@ header.hide {
 }
 
 .banner-content button:hover {
-    background-color: #333;
+    background-color: #7c322c;
 }
 
 @media (max-width: 480px) {
@@ -232,6 +231,7 @@ header.hide {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 300;
     font-size: 40px;
+    color: #412625
 }
 
 .proposta-content > p {
@@ -261,6 +261,7 @@ header.hide {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 300;
     font-size: 40px;
+    color: #412625
 }
 
 .problema-content > p {
@@ -313,6 +314,7 @@ header.hide {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 300;
     font-size: 40px;
+    color: #412625
 }
 
 .solucao-content > p {
@@ -327,9 +329,9 @@ header.hide {
 
 .solucao-content > a > button {
     padding: 10px 20px;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-color: #171F25;
+    background-color: #622723;
     color: #fff;
     border: none;
     border-radius: 8px;
@@ -339,19 +341,7 @@ header.hide {
 }
 
 .solucao-content > a > button:hover {
-    background-color: #333;
-}
-
-@media (max-width: 768px) {
-    .solucao {
-        padding: 20px;
-        box-sizing: border-box;
-    }
-
-    .solucao-container {
-        flex-direction: column;
-        align-items: center;
-    }
+    background-color: #7c322c;
 }
 
 .solucao-content {
@@ -364,6 +354,22 @@ header.hide {
     box-sizing: border-box;
     width: 100%;
     height: auto;
+}
+
+@media (max-width: 768px) {
+    .solucao {
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .solucao-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .solucao-content {
+        padding: 20px;
+    }
 }
 
 .sobre {
@@ -381,6 +387,7 @@ header.hide {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 300;
     font-size: 40px;
+    color: #412625;
 }
 
 .sobre-content > p {
@@ -415,7 +422,7 @@ header.hide {
 
 footer {
     box-sizing: border-box;
-    background-color: #171F25;
+    background-color: #412625;
     color: white;
     font-family: "Microsoft Yi Baiti", sans-serif;
     text-align: center;
