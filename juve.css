@@ -230,7 +230,7 @@ header.hide {
 .proposta-content > h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 300;
-    font-size: 40px;
+    font-size: 3rem;
     color: #412625
 }
 
@@ -260,7 +260,7 @@ header.hide {
 .problema-content > h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 300;
-    font-size: 40px;
+    font-size: 3rem;
     color: #412625
 }
 
@@ -313,7 +313,7 @@ header.hide {
 .solucao-content > h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 300;
-    font-size: 40px;
+    font-size: 3rem;
     color: #412625
 }
 
@@ -350,9 +350,13 @@ header.hide {
     box-sizing: border-box;
 }
 
+.solucao-image {
+    text-align: center;
+}
+
 .solucao-image > img {
     box-sizing: border-box;
-    width: 100%;
+    width: 90%;
     height: auto;
 }
 
@@ -372,6 +376,120 @@ header.hide {
     }
 }
 
+.carrossel {
+    padding: 10px 30px;
+    box-sizing: border-box;
+}
+
+.carrossel-container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.carrossel-content > h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 300;
+    font-size: 3rem;
+    color: #412625;
+}
+
+.carrossel-content > p {
+    text-indent: 2em;
+    font-family: "Microsoft Yi Baiti", sans-serif;
+    font-size: 28px;
+}
+
+@media (max-width: 768px) {
+    .carrossel {
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .carrossel-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.carrossel-content {
+    text-align: justify;
+    padding: 0px 20px;
+    box-sizing: border-box;
+}
+
+.carrossel-image > img {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+}
+
+.carrossel-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    overflow: hidden;
+    max-width: 100%;
+    align-self: center;
+}
+
+.carrossel-images {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 10px 0;
+}
+
+.card {
+    flex: 0 0 auto;
+    width: 200px;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.card p {
+    margin-top: 10px;
+    font-family: "Microsoft Yi Baiti", sans-serif;
+    font-size: 18px;
+    color: #412625;
+}
+
+.carrossel-btn {
+    background-color: #412625;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 2rem;
+    border-radius: 50%;
+    z-index: 2;
+    transition: background-color 0.3s ease;
+}
+
+.carrossel-btn:hover {
+    background-color: #5c3c3c;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .card {
+        width: 150px;
+    }
+
+    .carrossel-btn {
+        padding: 8px;
+        font-size: 16px;
+    }
+}
+
 .sobre {
     padding: 10px 30px;
     box-sizing: border-box;
@@ -386,7 +504,7 @@ header.hide {
 .sobre-content > h1 {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-weight: 300;
-    font-size: 40px;
+    font-size: 3rem;
     color: #412625;
 }
 
@@ -422,6 +540,9 @@ header.hide {
 
 footer {
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #412625;
     color: white;
     font-family: "Microsoft Yi Baiti", sans-serif;
